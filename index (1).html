@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAD Research Institute | Advancing Medical Science</title>
+
+    <meta name="description" content="FAD Research Institute is dedicated to advancing hormone science, neuroscience, molecular medicine and biomedical research.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8fc;
+            color: #17263c;
+            line-height: 1.6;
+        }
+
+        :root {
+            --navy: #071b35;
+            --blue: #0879c9;
+            --cyan: #00c4d6;
+            --light: #eaf5fb;
+            --white: #ffffff;
+        }
+
+        /* HEADER */
+
+        header {
+            background: var(--navy);
+            color: white;
+            padding: 16px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--cyan);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--cyan);
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 620px;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            color: white;
+            background:
+                linear-gradient(rgba(4, 20, 42, 0.85), rgba(4, 20, 42, 0.88)),
+                url("https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1800&q=85");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--cyan);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 30px;
+            color: #e0eaf5;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--cyan);
+            color: var(--navy);
+            padding: 13px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 34px;
+            color: var(--navy);
+        }
+
+        .section-title p {
+            color: #66758a;
+            margin-top: 10px;
+        }
+
+        .section-title span {
+            color: var(--blue);
+        }
+
+        /* ABOUT */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #526174;
+        }
+
+        /* FOUNDER */
+
+        .founder-section {
+            background: var(--light);
+        }
+
+        .founder-card {
+            max-width: 370px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .founder-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .founder-info {
+            padding: 25px;
+        }
+
+        .founder-info h3 {
+            font-size: 25px;
+            color: var(--navy);
+        }
+
+        .founder-info p {
+            color: var(--blue);
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 7px;
+        }
+
+        /* RESEARCH AREAS */
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .research-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .research-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .research-card div {
+            padding: 22px;
+        }
+
+        .research-card h3 {
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .research-card p {
+            color: #66758a;
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            background: var(--navy);
+            color: white;
+        }
+
+        .projects .section-title h2 {
+            color: white;
+        }
+
+        .projects .section-title p {
+            color: #bdcad9;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #102d50;
+            padding: 30px;
+            border-left: 4px solid var(--cyan);
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            color: var(--cyan);
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #d5e1ed;
+        }
+
+        /* PUBLICATIONS */
+
+        .publication-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        /* LABORATORY */
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .lab-grid img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .lab-note {
+            color: #66758a;
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        /* TEAM */
+
+        .team-box {
+            background: var(--light);
+            text-align: center;
+            padding: 45px 25px;
+            border-radius: 12px;
+        }
+
+        .team-box h3 {
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        /* COLLABORATION */
+
+        .collaboration {
+            background: #eaf5fb;
+            text-align: center;
+        }
+
+        .collaboration p {
+            max-width: 750px;
+            margin: auto;
+            color: #526174;
+        }
+
+        /* JOIN */
+
+        .join {
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(4, 20, 42, 0.88), rgba(4, 20, 42, 0.88)),
+                url("https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1600&q=85");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .join h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .join p {
+            margin-bottom: 25px;
+            color: #e1ebf5;
+        }
+
+        /* CONTACT */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .contact-info {
+            background: var(--navy);
+            color: white;
+            padding: 35px;
+            border-radius: 10px;
+        }
+
+        .contact-info h3 {
+            color: var(--cyan);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: white;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 15px;
+            border: 1px solid #d8e1eb;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #041225;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer span {
+            color: var(--cyan);
+        }
+
+        footer p {
+            font-size: 13px;
+            margin-top: 8px;
+            color: #bdcad9;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .research-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 60px 6%;
+            }
+
+            .hero {
+                min-height: 500px;
+                padding: 60px 6%;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .about,
+            .research-grid,
+            .project-grid,
+            .lab-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .about-image img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">FAD <span>RESEARCH</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#founder">Founder</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>
+                Advancing Science.<br>
+                <span>Transforming Medicine.</span>
+            </h1>
+
+            <p>
+                FAD Research Institute is dedicated to advancing scientific
+                discovery in hormone science, neuroscience, molecular medicine
+                and biomedical research.
+            </p>
+
+            <a href="#research" class="btn">Explore Our Research</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <div class="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1000&q=85"
+                    alt="Scientific research laboratory">
+            </div>
+
+            <div class="about-text">
+                <h2>About FAD Research Institute</h2>
+
+                <p>
+                    FAD Research Institute is an emerging research initiative
+                    focused on scientific innovation and the advancement of
+                    medical knowledge.
+                </p>
+
+                <p>
+                    Our research vision emphasizes the integration of
+                    endocrinology, neuroscience, molecular biology,
+                    genetics and modern computational technologies.
+                </p>
+
+                <p>
+                    We aim to contribute to a future where scientific research
+                    supports better understanding, prevention and treatment
+                    of human diseases.
+                </p>
+
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOUNDER -->
+
+    <section class="founder-section" id="founder">
+
+        <div class="section-title">
+            <h2>Founder & Leadership</h2>
+            <p>Leadership and scientific vision</p>
+        </div>
+
+        <div class="founder-card">
+
+            <img src="robin.jpg" alt="Portrait of RN. Robin">
+
+            <div class="founder-info">
+                <h3>RN. Robin</h3>
+                <p>FOUNDER & CEO</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RESEARCH AREAS -->
+
+    <section id="research">
+
+        <div class="section-title">
+            <h2>Our <span>Research Areas</span></h2>
+            <p>Exploring the frontiers of modern biomedical science</p>
+        </div>
+
+        <div class="research-grid">
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=85"
+                    alt="Hormone science">
+                <div>
+                    <h3>Hormone Science</h3>
+                    <p>
+                        Exploring hormonal regulation, endocrine signaling
+                        and hormonal development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=85"
+                    alt="Endocrinology research">
+                <div>
+                    <h3>Endocrinology</h3>
+                    <p>
+                        Understanding endocrine systems, hormone-related
+                        disorders and metabolic regulation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=85"
+                    alt="Neuroscience">
+                <div>
+                    <h3>Neuroscience</h3>
+                    <p>
+                        Investigating the nervous system, brain function
+                        and molecular mechanisms of neurological diseases.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=800&q=85"
+                    alt="Molecular medicine">
+                <div>
+                    <h3>Molecular Medicine</h3>
+                    <p>
+                        Studying molecular mechanisms of disease and
+                        potential therapeutic approaches.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=85"
+                    alt="Molecular genetics">
+                <div>
+                    <h3>Molecular Genetics</h3>
+                    <p>
+                        Exploring genes, genetic variation and molecular
+                        pathways associated with human health.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1581093458791-9d15482442f4?auto=format&fit=crop&w=800&q=85"
+                    alt="Biomedical research">
+                <div>
+                    <h3>Biomedical Research</h3>
+                    <p>
+                        Connecting biological discovery with medical
+                        knowledge and translational research.
+                    </p>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=85"
+                    alt="Artificial intelligence research">
+                <div>
+                    <h3>AI in Drug Discovery</h3>
+                    <p>
+                        Exploring artificial intelligence, computational
+                        biology and data-driven drug discovery.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="projects" id="projects">
+
+        <div class="section-title">
+            <h2>Research Projects</h2>
+            <p>Our proposed scientific research directions</p>
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>01. Hormonal Development</h3>
+                <p>
+                    Investigating hormonal signaling, endocrine development
+                    and the molecular regulation of physiological processes.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>02. Molecular Disease Research</h3>
+                <p>
+                    Exploring molecular pathways and biological mechanisms
+                    involved in human diseases.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>03. Computational Drug Discovery</h3>
+                <p>
+                    Exploring molecular modeling, virtual screening and
+                    AI-assisted drug design.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>04. Neuroscience Research</h3>
+                <p>
+                    Studying molecular and cellular mechanisms associated
+                    with brain function and neurological disorders.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PUBLICATIONS -->
+
+    <section id="publications">
+
+        <div class="section-title">
+            <h2>Research Publications</h2>
+            <p>Scientific knowledge and academic contributions</p>
+        </div>
+
+        <div class="publication-box">
+            <h3>Publications & Scientific Contributions</h3>
+
+            <p>
+                Research publications, scientific articles and academic
+                contributions will be presented here as they become available.
+            </p>
+
+            <p style="margin-top:15px; color:#0879c9;">
+                Publication updates coming soon.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- LABORATORY -->
+
+    <section id="laboratory">
+
+        <div class="section-title">
+          <h2>Scientific Collaborations</h2>
+        </div>
+
+        <p>
+            We welcome opportunities for academic collaboration, scientific
+            discussion and research partnerships with universities,
+            research organizations and professionals.
+        </p>
+
+    </section>
+
+    <!-- NEWS -->
+
+    <section id="news">
+
+        <div class="section-title">
+            <h2>News & Updates</h2>
+            <p>Latest developments from our research initiative</p>
+        </div>
+
+        <div class="publication-box">
+            <h3>Stay Connected</h3>
+            <p>
+                Institutional announcements, research updates and
+                future opportunities will be published here.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- JOIN -->
+    <section class="join">
+
+        <h2>Join Our Research Vision</h2>
+
+        <p>
+            Be part of a future driven by scientific discovery,
+            medical innovation and research excellence.
+        </p>
+
+        <a href="#contact" class="btn">Get in Touch</a>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="section-title">
+            <h2>Contact <span>FAD Research Institute</span></h2>
+            <p>Connect with us for research and collaboration inquiries</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h3>Contact Information</h3>
+
+                <p><strong>Institute:</strong> FAD Research Institute</p>
+
+                <p><strong>Founder & CEO:</strong> RN. Robin</p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:rn.robinmondol@gmail.com">
+                        rn.robinmondol@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:+8801793175803">
+                      +880 1793-175803
+                    </a>
+                </p>
+
+                <p><strong>Country:</strong> Bangladesh</p>
+
+            </div>
+
+            <div class="contact-form">
+
+                <h3>Send an Inquiry</h3>
+
+                <form action="mailto:rn.robinmondol@gmail.com"
+                      method="post"
+                      enctype="text/plain">
+
+                    <input
+                        type="text"
+                        name="Name"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Your Email"
+                        required>
+
+                    <input
+                        type="text"
+                        name="Subject"
+                        placeholder="Subject">
+
+                    <textarea
+                        name="Message"
+                        placeholder="Write your message..."
+                        required></textarea>
+
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
+
+</form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>FAD <span>RESEARCH INSTITUTE</span></h2>
+
+        <p>
+            Advancing Science. Transforming Medicine.
+        </p>
+
+        <p>
+            © 2026 FAD Research Institute. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
