@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Mutations in Endocrine Disorders | FAD Research</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0b2545;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            color: #8da9c4;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #134074;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .abstract-box {
+            background-color: #eef4f8;
+            border-left: 5px solid #134074;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        .abstract-box h3 {
+            margin-top: 0;
+            color: #134074;
+        }
+        .keywords {
+            font-style: italic;
+            color: #555;
+            margin-top: 15px;
+        }
+        h2 {
+            color: #0b2545;
+            border-bottom: 2px solid #eef4f8;
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+        h3 {
+            color: #134074;
+            margin-top: 25px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Genetic Mutations in Endocrine Disorders</h1>
+        <p>From Molecular Mechanisms to Precision Medicine (2026 Review)</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <div class="abstract-box">
+            <h3>Abstract</h3>
+            <p>Endocrine disorders are increasingly recognized as genetically heterogeneous diseases characterized by inherited or somatic alterations that disrupt hormone synthesis, receptor binding, intracellular signaling cascades, and peripheral tissue responsiveness. Recent breakthroughs in next-generation sequencing (NGS), whole-exome sequencing (WES), and CRISPR-based functional genomics have transformed the diagnostic and therapeutic landscape of endocrinology. This review provides a comprehensive overview of the molecular pathogenesis of major endocrine disorders, including monogenic diabetes, thyroid carcinomas, and adrenal neoplasia.</p>
+            <div class="keywords">
+                <strong>Keywords:</strong> Endocrinology, Genetic Mutation, Precision Medicine, CRISPR, Hormone Signaling, Molecular Pathogenesis.
+            </div>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>The human endocrine system is a highly sophisticated network that maintains systemic homeostasis by regulating metabolism, cellular growth, reproduction, calcium balance, and stress adaptation through coordinated hormonal signaling. Precise control of these pathways is vital; consequently, any disruption in hormone synthesis, secretion, or action can lead to diverse clinical manifestations.</p>
+
+        <h2>2. Classification and Mechanisms of Genetic Alterations</h2>
+        <h3>2.1 Germline Mutations</h3>
+        <p>Germline mutations originate within the gametes and are subsequently replicated in every nucleated cell of the affected organism. These variations are inherently heritable, passing down through families in classical Mendelian patterns (e.g., MEN1, RET proto-oncogene).</p>
+
+        <h3>2.2 Somatic Mutations</h3>
+        <p>In contrast to inherited alterations, somatic mutations are post-zygotic events that arise spontaneously within specific non-germline cells throughout a person’s lifespan (e.g., BRAF V600E mutation in thyroid carcinomas).</p>
+
+        <h3>2.3 Epigenetic Alterations</h3>
+        <p>Includes DNA Methylation, Histone Modification, and Non-coding RNAs (miRNAs/lncRNAs) modulating gene expression without changing the DNA sequence directly.</p>
+
+        <h2>3. Precision Medicine in Endocrinology (2026)</h2>
+        <p>The landscape of clinical endocrinology in 2026 has transitioned from empirical, symptom-based management to a highly integrated, data-driven precision medicine framework utilizing multi-omics integration and AI-assisted variant interpretation engines (e.g., AlphaMissense, Evo2).</p>
+
+        <h2>4. Emerging Therapeutic Strategies</h2>
+        <ul>
+            <li><strong>CRISPR-Cas Gene Editing:</strong> Base Editing and Prime Editing for single-nucleotide targeting.</li>
+            <li><strong>RNA-Based Therapeutics:</strong> Small Interfering RNA (siRNA) and Antisense Oligonucleotides (ASOs).</li>
+            <li><strong>Personalized Targeted Therapies:</strong> RET and BRAF/MEK Inhibitors.</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2026 FAD Research Institute | Author: RN. Robin
+    </footer>
+
+</body>
+</html>
